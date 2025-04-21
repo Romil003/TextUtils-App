@@ -48,7 +48,7 @@ export default function TextForm(props) {
   }} onChange={handleOnChange} rows="8"></textarea>
 </div>
   <button className={`btn btn-${props.mode==='dark'?'primary':props.mode==='grey'?'primary':props.mode==='blue'?'secondary':props.mode==='orange'?'info':'success'} mx-2`} onClick={handleUpClick}>Convert To Uppercase</button>
-  <button className={`btn btn-${props.mode==='dark'?'primary':props.mode==='grey'?'primary':props.mode==='blue'?'secondary':props.mode==='orange'?'info':'success'} mx-2`} onClick={handleLoClick}>Convert To Lowercase</button>
+  {/* <button className={`btn btn-${props.mode==='dark'?'primary':props.mode==='grey'?'primary':props.mode==='blue'?'secondary':props.mode==='orange'?'info':'success'} mx-2`} onClick={handleLoClick}>Convert To Lowercase</button> */}
   <button className={`btn btn-${props.mode==='dark'?'primary':props.mode==='grey'?'primary':props.mode==='blue'?'secondary':props.mode==='orange'?'info':'success'} mx-2`} onClick={handleClearClick}>Clear Text</button>
     </div>
     <div className='container my-3' style={{
