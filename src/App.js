@@ -33,7 +33,7 @@ function App() {
       setMode('dark');
       document.body.style.background = "#042743";
       showAlert("Dark mode has been enabled","success");
-      document.title = "TextUtils - Dark Mode On";
+      // document.title = "TextUtils - Dark Mode On";
       // changing title for 2 seconds
       // setInterval(() => {
       //   document.title = "TextUtils is Amazing one";
@@ -42,7 +42,7 @@ function App() {
       setMode('light');
       document.body.style.background = "white";
       showAlert("Light mode has been enabled","success");
-      document.title = "TextUtils - Light Mode On";
+      // document.title = "TextUtils - Light Mode On";
     }
   }
 
@@ -92,7 +92,7 @@ function App() {
         <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text here to analyze below" mode={mode}/>} />
         <Route exact  path="/about" element={<About />} />
       </Routes> */}
-          <TextForm showAlert={showAlert} heading="Enter the text here to analyze below" mode={mode}/>
+          <TextForm showAlert={showAlert} heading="Try TextUtils - Word To Character Counter" mode={mode}/>
     </div>
     {/* </Router> */}
     </>
